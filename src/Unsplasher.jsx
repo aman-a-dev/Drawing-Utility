@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import './App.css'; // Importing the modern styles below
 
+
 export default function UnsplashImageFetcher() {
   const [imageUrl, setImageUrl] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [zanra, setZanra] = useState('')
+  
 
   // Replace with your actual Unsplash Access Key
-  const ACCESS_KEY = '6XVMHVFjwx6NFFe5njIlxydh8OrKKKH076rF2nXRdWs'; 
+  const ACCESS_KEY = import.meta.env.VITE_API_KEY 
 
   const fetchImage = async () => {
     setLoading(true);
     setError(null);
+    
     try {
       // Added '&query=drawing' to limit results to drawing-related photos
       const response = await fetch(
