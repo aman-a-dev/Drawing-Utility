@@ -10,7 +10,7 @@ export default function UnsplashImageFetcher() {
   
 
   // Replace with your actual Unsplash Access Key
-  const ACCESS_KEY = import.meta.env.VITE_API_KEY 
+  const ACCESS_KEY = '6XVMHVFjwx6NFFe5njIlxydh8OrKKKH076rF2nXRdWs'
 
   const fetchImage = async () => {
     setLoading(true);
