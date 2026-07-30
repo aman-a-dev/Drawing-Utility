@@ -1,16 +1,57 @@
-# React + Vite
+# Drawing-Utility 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, modern React application that fetches random, high-quality artistic images from Unsplash to spark your creativity. Built with a "Pro Max" UI/UX approach, featuring buttery-smooth animations, a dynamic theme engine, and a full suite of image utilities.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **🌗 Dynamic Theming:** Seamless Dark/Light mode toggle with smooth, physics-based transitions.
+* **🎬 Fluid Animations:** Powered by Framer Motion for tactile button presses, spring-physics lightboxes, and smooth state cross-fades.
+* **🛠️ Utility Toolbar:** 
+  * **Download:** Direct high-res image downloads.
+  * **Share:** Native Web Share API on mobile, clipboard fallback on desktop.
+  * **Expand:** Immersive, full-screen lightbox view.
+* **⚡ Smart Fetching:** Uses `AbortController` to instantly cancel network requests mid-flight.
+* **💎 Premium UI Details:** Glassmorphism cards, tactile 3D buttons, subtle film-grain texture, optical depth, and custom scrollbars.
+* **📱 Responsive & Accessible:** Fluid typography, mobile-optimized layouts, and keyboard navigation support.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React (Vite)
+* **Animations:** Framer Motion
+* **Styling:** Modern CSS3 (Custom Properties, Backdrop Filters, Mask Composites)
+* **API:** [Unsplash API](https://unsplash.com/developers)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone and Install
+```bash
+git clone https://github.com/aman-a-dev/Drawing-Utility/tree/main
+cd Drawing-Utility
+npm install
+```
+
+### 2. Install Dependencies
+Ensure you have install Dependencies
+```bash
+npm install
+```
+
+### 3. Configure API Key
+Open `src/utils/unsplashService.js` and replace the placeholder with your Unsplash Access Key:
+```javascript
+const ACCESS_KEY = 'YOUR_UNSPLASH_ACCESS_KEY_HERE';
+```
+*(Note: You can get a free key by creating an app on the [Unsplash Developer Portal](https://unsplash.com/developers))*
+
+### 4. Run the App
+```bash
+npm run dev
+
+```
+
+## 📜 License
+MIT License. Feel free to use this code for your own projects! 
+
+*** 
+
+Made by [Aman dev](https://aman.is-a-fullstack.dev)
